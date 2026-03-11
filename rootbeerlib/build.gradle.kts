@@ -94,9 +94,5 @@ publishing {
     }
 }
 
-signing {
-    sign(publishing.publications["release"])
-}
-
 private fun Project.findStringPropertyOrDefault(propertyName: String, default: String? = "") =
     findProperty(propertyName)?.toString() ?: default
